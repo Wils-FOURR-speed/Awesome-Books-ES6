@@ -8,3 +8,4 @@ const displayCurrentDate = () => {
 };
 
 BookManager.initialize();
+export default displayCurrentDate;
