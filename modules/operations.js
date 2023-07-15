@@ -1,4 +1,4 @@
-export const displayBooks = (books, booksDiv) => {
+export const displayBooks = ( books, booksDiv ) => {
     booksDiv.innerHTML = '';
   
     if (books.length === 0) {
@@ -47,3 +47,4 @@ export const displayBooks = (books, booksDiv) => {
       authorInput.value = '';
     });
   };
+  
