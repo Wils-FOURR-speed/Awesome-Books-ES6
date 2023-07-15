@@ -3,47 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome-Books With ES6</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="index.css">
+    <title>Book Collection</title>
 </head>
 
 <body>
-    <nav id="header">
-        <h2>Awesome Books</h2>
-        <ul class="ul">
-            <li id="list" class="li">List of Awesome books</li>
-            <li id="addnew" class="li">Add new Book</li>
-            <li id="contact" class="li">Contact info</li>
-        </ul>
-    </nav>
-    <p class="date-area"></p>
-    <section id="books">
-        <h1>All Awesome Books</h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="logo"><a href="#">Awesome Books</a></li>
+                <li><a href="#books">Books List</a></li>
+                <li><a href="#add-book">Add Book Form</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </ul>
+        </nav>
 
-    </section>
-    <section id="createBook">
-        <hr id="hr">
-        <h2>Add a new book</h2>
-        <form action="" id="form">
-            <input type="text" placeholder="Title" name="title" />
-            <input type="text" placeholder="Author" name="author" />
-            <button class="btn" type="submit">add</button>
-        </form>
-    </section>
-    <section id="contactinfo">
-        <h2>Contact Information</h2>
-        <p>Do have any questions or you just want to say "Hello"?</p>
-        <p>You can reach out to us!</p>
-        <ul>
-            <li>Our email: wilsanfourrspeed@gmail.com</li>
-            <li>Our Phone Number: +237676129931</li>
-        </ul>
-    </section>
-    <section id="footer">
-        <h4>Copyright: ...</h4>
-    </section>
+        <p id="currentDate"></p>
+    </header>
+    <main class="main-box">
+        <section id="books" class="content">
+            <h2>All Books</h2>
+            <div id="bookContainer" class="book-container"></div>
+        </section>
+
+        <section id="add-book" class="content">
+            <h2>Add Book</h2>
+            <form id="addBookForm">
+                <div class="user-box">
+                    <input type="text" id="titleInput" required>
+                    <label>Title</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" id="authorInput" required>
+                    <label>Author</label>
+                </div>
+                <div>
+                    <button type="submit" class="add-button">
+                        Add
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section id="contact" class="content">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p class="contact-description">Do you have any questions or just want to say "hello"? You can reach out
+                    to us.</p>
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:info@example.com">info@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Phone:</span>
+                    <a href="tel:+123456789">+123456789</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Address:</span>
+                    <p>123 Street, City, Country</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
     <script src="index.js" type="module"></script>
+
 </body>
 
 </html>
